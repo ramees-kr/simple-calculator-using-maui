@@ -10,22 +10,31 @@ namespace Calculator
     {
         public static double Process(double operator1, double operator2, string operand)
         {
+            double result = 0;
+
             switch (operand)
             {
                 case "+":
-                    return operator1 + operator2;
+                    result = operator1 + operator2;
+                    break;
                 case "-":
-                    return operator1 - operator2;
+                    result = operator1 - operator2;
+                    break;
                 case "x":
-                    return operator1 * operator2;
+                    result = operator1 * operator2;
+                    break;
                 case "/":
                     if (operator2 != 0)
-                        return operator1 / operator2;
+                        result = operator1 / operator2;
                     else
                         throw new DivideByZeroException("Cannot divide by zero");
+                    break;
                 default:
                     throw new ArgumentException("Invalid operand");
             }
+
+            return Math.Round(result, 8);
+
         }
 
     }

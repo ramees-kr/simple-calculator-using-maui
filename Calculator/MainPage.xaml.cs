@@ -34,9 +34,17 @@
         {
             Button button = (Button)sender;
             currentOperator = button.Text;
-            firstOperand = double.Parse(currentInput);
-            currentInput = "0";
-            resultLabel.Text = currentInput;
+            if (currentInput == "Error")
+            {
+                currentInput = "0";
+            }
+            else
+            {
+                firstOperand = double.Parse(currentInput);
+                currentInput = "0";
+                resultLabel.Text = currentInput;
+            }
+            
         }
 
         private void ClearButton_Clicked(object sender, EventArgs e)
@@ -77,6 +85,11 @@
                     currentInput = "Error";
                     resultLabel.Text = currentInput;
                     Console.WriteLine($"Error occurred: {ex.Message}");
+
+                    //Clear the operands and operator
+                    currentOperator = null;
+                    firstOperand = 0;
+                    secondOperand = 0;
                 }
             }
         }
