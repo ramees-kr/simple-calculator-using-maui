@@ -1,0 +1,26 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Calculator"
+             x:Class="Calculator.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Global style for Button controls -->
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="24" />
+            </Style>
+
+            <!-- Global style for Label controls -->
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="24" />
+            </Style>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />-->
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
