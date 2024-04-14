@@ -1,8 +1,8 @@
-# Calculator App
+# MAUI Calculator
 
 ## Description
 
-Calculator App is a simple calculator application developed using Xamarin.Forms. It provides basic arithmetic operations such as addition, subtraction, multiplication, and division. The app also includes features like clearing the calculation, deleting the last entered digit, and support for decimal numbers.
+MAUI Calculator is a basic calculator app built using .NET MAUI. It allows users to perform addition, subtraction, multiplication, and division operations on numbers.
 
 ## Screenshots
 
@@ -20,17 +20,21 @@ Calculator App is a simple calculator application developed using Xamarin.Forms.
 ## Installation
 
 1. Clone the repository to your local machine.
-2. Ensure you have Visual Studio with Xamarin development tools installed.
-3. Open the project in Visual Studio.
-4. Build and run the application on your desired platform (Android, iOS, UWP).
+2. Ensure you have .NET 8.0 and .NET MAUI installed.
+3. Open the project in Visual Studio or your preferred IDE.
+4. Build and run the application.
 
 ## Usage
 
-1. Launch the calculator app on your device or emulator.
-2. Use the number buttons to enter digits for calculation.
-3. Use the operator buttons to perform arithmetic operations.
-4. Press the Clear button to reset the calculator.
-5. Press the Backspace button to delete the last entered digit.
+1. Launch the MAUI Calculator app.
+2. Use the number buttons to input digits.
+3. Use the operator buttons to perform addition, subtraction, multiplication, or division.
+4. Press the equals button to see the result on the screen.
+
+## Technologies Used
+
+- .NET 8.0
+- .NET MAUI
 
 ## Contributing
 
